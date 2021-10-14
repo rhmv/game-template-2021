@@ -1,0 +1,439 @@
+/*=========================================================*/
+/* Global Class */
+/*=========================================================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.btn {
+  padding: 0;
+}
+
+/*=========================================================*/
+/* Swiper Section */
+/*=========================================================*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=========================================================*/
+/* Variables Section */
+/*=========================================================*/
+.bg-color {
+  background-color: red;
+  border-radius: 0;
+}
+
+.bg-color-2 {
+  background-color: black;
+}
+
+/*=========================================================*/
+/* Top Section */
+/*=========================================================*/
+header {
+  background-color: #494949;
+  border-bottom: 2px solid red;
+}
+
+@media (max-width: 500px) {
+  header .container .header-top .top-logo a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  header .container .social-icon {
+    margin-bottom: 10px;
+  }
+  header .container .social-icon li a i {
+    font-size: 14px;
+  }
+  header .container .social-icon li {
+    display: none;
+  }
+}
+
+header .container .header-top a {
+  color: red;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 600;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header .container .social-icon li a {
+  color: white;
+  font-size: 18px;
+}
+
+header .container .register-btn a {
+  background-color: red;
+  font-size: 16px;
+  text-transform: none;
+  border-radius: 0;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/*=========================================================*/
+/* Navbar Section */
+/*=========================================================*/
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 50px;
+  -webkit-box-shadow: 0px 1px 1px 0px #535353;
+          box-shadow: 0px 1px 1px 0px #535353;
+}
+
+@media (max-width: 992px) {
+  nav .container .collapse ul .dropdown .dropdown-menu .dropdown-item {
+    padding-right: 0;
+    padding-left: 5px;
+  }
+  nav .container form {
+    position: absolute;
+    top: 0;
+  }
+  nav .container button {
+    border: none;
+    padding-left: 0;
+  }
+  nav .container button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (max-width: 500px) {
+  nav .container {
+    position: relative;
+  }
+  nav .container .collapse ul li .nav-link {
+    font-size: 16px;
+  }
+  nav .container form .nav-input {
+    width: 150px;
+  }
+  nav .container form button {
+    position: absolute;
+    left: 120px;
+  }
+}
+
+nav .container {
+  position: relative;
+}
+
+nav .container .collapse ul li .nav-link {
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+nav .container .collapse ul li .nav-link:hover {
+  color: red;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+nav .container .collapse ul .dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #212529;
+  padding: 0;
+  border-top: none;
+  border-right: none;
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 0;
+}
+
+nav .container .collapse ul .dropdown:hover .dropdown-menu .dropdown-item {
+  color: white;
+  line-height: 40px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+}
+
+nav .container .collapse ul .dropdown:hover .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+}
+
+nav .container .collapse ul .dropdown:hover .dropdown-menu .dropdown-item::before {
+  content: '';
+  height: 2px;
+  width: 100%;
+  left: -100%;
+  z-index: -1;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+  background-color: red;
+  bottom: 0;
+  position: absolute;
+}
+
+nav .container .collapse ul .dropdown:hover .dropdown-menu .dropdown-item:hover::before {
+  left: 0;
+  z-index: 1;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+nav .container form {
+  position: absolute;
+  right: 0;
+}
+
+nav .container form .nav-input {
+  background-color: transparent;
+  color: white;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  border-bottom: 1px solid red;
+}
+
+nav .container form .nav-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav .container form button {
+  position: absolute;
+  right: 0;
+}
+
+nav .container form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*=========================================================*/
+/* Slider Section 1 */
+/*=========================================================*/
+.container-fluid .mySwiper1 .swiper-wrapper .swiper-slide .slide-txt-content {
+  height: 70%;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  overflow-y: auto;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+.container-fluid .mySwiper1 .swiper-wrapper .swiper-slide .slide-txt-content span:nth-child(1) {
+  font-family: Arial, helvetica, sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .container-fluid .mySwiper1 .swiper-wrapper .swiper-slide .slide-txt-content span:nth-child(1) {
+    font-size: 25px;
+  }
+}
+
+/*=========================================================*/
+/* New Game Section */
+/*=========================================================*/
+section .container .row .col-lg-8 .card .row .col-md-5 {
+  overflow: hidden;
+}
+
+section .container .row .col-lg-8 .card .row .col-md-5 img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+section .container .row .col-lg-8 .card .row .col-md-5:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+  cursor: pointer;
+}
+
+section .container .row .col-lg-4 .card .game-card {
+  overflow: hidden;
+}
+
+section .container .row .col-lg-4 .card .game-card img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+section .container .row .col-lg-4 .card .game-card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+  cursor: pointer;
+}
+
+section .container .row .col-lg-3 .card .game-card {
+  overflow: hidden;
+}
+
+section .container .row .col-lg-3 .card .game-card img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+section .container .row .col-lg-3 .card .game-card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+  cursor: pointer;
+}
+
+/*=========================================================*/
+/* Game Photo List Section */
+/*=========================================================*/
+section .container-fluid .row .col-lg-3 .game-list-img {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+section .container-fluid .row .col-lg-3 .game-list-img .game-list-video {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-top: 60px;
+  height: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-color: rgba(255, 0, 0, 0.4);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+section .container-fluid .row .col-lg-3 .game-list-img:hover .game-list-video {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+section .container-fluid .row .col-lg-3 .game-list-img:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+section .container-fluid .row .col-lg-3 .game-list-img img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+/*=========================================================*/
+/* Form Section */
+/*=========================================================*/
+section .container .row .col-lg-6 form .email-part input {
+  padding: 10px;
+  border-radius: 0;
+}
+
+section .container .row .col-lg-6 form .email-part input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: red;
+}
+
+section .container .row .col-lg-6 form .pasword-part input {
+  padding: 10px;
+  border-radius: 0;
+}
+
+section .container .row .col-lg-6 form .pasword-part input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: red;
+}
+
+/*=========================================================*/
+/* Footer Section */
+/*=========================================================*/
+@media (max-width: 768px) {
+  .row-footer .col-lg-4 .footer-list {
+    font-size: 16px;
+  }
+}
+
+.row-footer .col-lg-4 ul li a {
+  color: white;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+  display: block;
+}
+
+.row-footer .col-lg-4 ul li a:hover {
+  color: red;
+  padding-left: 5px;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+/*# sourceMappingURL=styles.css.map */
